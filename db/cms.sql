@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `cms_category` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 -- --------------------------------------------------------
 
@@ -47,7 +47,7 @@ CREATE TABLE `cms_posts` (
   `status` enum('published','draft','archived','') NOT NULL DEFAULT 'published',
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE `cms_user` (
   `password` varchar(50) NOT NULL,
   `type` int(11) NOT NULL,
   `deleted` int(11) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 --
 -- Chỉ mục cho các bảng đã đổ
