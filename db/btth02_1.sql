@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `comment` (
-  `id` int(11) NOT NULL,
-  `parent_id` int(11) NOT NULL,
+  `id` int(11) NOT  NULL ,
+  `parent_id` int(11) NOT  NULL ,
   `comment` varchar(200) NOT NULL,
   `sender` varchar(40) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp()
@@ -45,21 +45,21 @@ CREATE TABLE `comment` (
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`id`);
 COMMIT;
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (1, 1, 'Great job!', 'Major Blakeley', '2023-03-19');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (2, 2, 'Well done!', 'Yance Prinett', '2022-10-07');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (3, 3, 'Great job!', 'Jamaal Cressingham', '2023-04-10');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (4, 4, 'Impressive!', 'Manya Lyttle', '2023-09-19');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (5, 5, 'Impressive!', 'Iain MacArte', '2023-01-01');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (6, 6, 'Fantastic!', 'Silvester Sabberton', '2023-02-25');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (7, 7, 'Keep it up!', 'Augustine Abramof', '2023-08-15');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (8, 8, 'Impressive!', 'Denna Varsey', '2023-10-02');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (9, 9, 'Bravo!', 'Bathsheba Witz', '2022-05-26');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (10, 10, 'I love it!', 'Alidia Trevon', '2022-05-27');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (11, 11, 'Well done!', 'Stephan Hencke', '2023-12-03');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (12, 12, 'Great job!', 'Hobart Galland', '2022-10-20');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (13, 13, 'Amazing work!', 'Darby Scrogges', '2023-04-30');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (14, 14, 'Impressive!', 'Berne Floris', '2023-10-01');
-insert into MOCK_DATA (id, parent_id, comment, sender, date) values (15, 15, 'I love it!', 'Crin Pacher', '2023-11-03');
+insert into comment (id, parent_id, comment, sender, date) values (1, 1, 'Great job!', 'Simona Hornigy', '2023-03-19');
+insert into comment (id, parent_id, comment, sender, date) values (2, 2, 'Well done!', 'Alfonse Braikenridgt', '2022-10-07');
+insert into comment (id, parent_id, comment, sender, date) values (3, 3, 'Great job!', 'Xavier Lankeste', '2023-04-10');
+insert into comment (id, parent_id, comment, sender, date) values (4, 4, 'Impressive!', 'Farley Bowland', '2023-09-19');
+insert into comment (id, parent_id, comment, sender, date) values (5, 5, 'Impressive!', 'Packston Surtees', '2023-01-01');
+insert into comment (id, parent_id, comment, sender, date) values (6, 6, 'Fantastic!', 'Judd Le febre', '2023-02-25');
+insert into comment (id, parent_id, comment, sender, date) values (7, 7, 'Keep it up!', 'Krystle Perutto', '2023-08-15');
+insert into comment (id, parent_id, comment, sender, date) values (8, 8, 'Impressive!', 'Janeva Botly', '2023-10-02');
+insert into comment (id, parent_id, comment, sender, date) values (9, 9, 'Bravo!', 'Dacie Trighton', '2022-05-26');
+insert into comment (id, parent_id, comment, sender, date) values (10, 10, 'I love it!', 'Cordie Largen', '2022-05-27');
+insert into comment (id, parent_id, comment, sender, date) values (11, 11, 'Well done!', 'Ashbey Plaistowe', '2023-12-03');
+insert into comment (id, parent_id, comment, sender, date) values (12, 12, 'Great job!', 'Tallulah Allcroft', '2022-10-20');
+insert into comment (id, parent_id, comment, sender, date) values (13, 13, 'Amazing work!', 'Wilfrid McNae', '2023-04-30');
+insert into comment (id, parent_id, comment, sender, date) values (14, 14, 'Impressive!', 'Marcia Esseby', '2023-10-01');
+insert into comment (id, parent_id, comment, sender, date) values (15, 15, 'I love it!', 'Meghan Spaunton', '2023-11-03');
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

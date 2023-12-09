@@ -62,21 +62,21 @@ CREATE TABLE `cms_posts` (
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-insert into cms_category (id, title, message, category_id, userid, status, created) values (1, 'Staff Accountant IV', 'Butorides striatus', 1, 1, 'draft', '2023-04-27');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (2, 'Quality Control Specialist', 'Alectura lathami', 2, 2, 'archived', '2023-07-21');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (3, 'Pharmacist', 'Ammospermophilus nelsoni', 3, 3, 'published', '2022-10-10');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (4, 'Payment Adjustment Coordinator', 'Dolichitus patagonum', 4, 4, 'draft', '2023-04-25');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (5, 'Senior Developer', 'Eumetopias jubatus', 5, 5, 'archived', '2022-08-05');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (6, 'Nurse', 'Echimys chrysurus', 6, 6, 'published', '2023-02-01');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (7, 'Graphic Designer', 'Neophron percnopterus', 7, 7, 'archived', '2022-11-02');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (8, 'Software Test Engineer I', 'Calyptorhynchus magnificus', 8, 8, 'archived', '2023-06-29');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (9, 'Community Outreach Specialist', 'Vombatus ursinus', 9, 9, 'archived', '2023-11-21');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (10, 'Senior Developer', 'Mycteria leucocephala', 10, 10, 'published', '2022-12-08');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (11, 'Research Associate', 'Anthropoides paradisea', 11, 11, 'draft', '2023-05-17');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (12, 'Community Outreach Specialist', 'Bettongia penicillata', 12, 12, 'published', '2022-12-29');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (13, 'Automation Specialist III', 'Mazama gouazoubira', 13, 13, 'published', '2023-07-21');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (14, 'Programmer Analyst IV', 'Arctogalidia trivirgata', 14, 14, 'archived', '2023-02-28');
-insert into cms_category (id, title, message, category_id, userid, status, created) values (15, 'Legal Assistant', 'Pseudocheirus peregrinus', 15, 15, 'draft', '2022-06-29');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (1, 'Staff Accountant IV', 'Butorides striatus', 1, 1, 'draft', '2023-04-27');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (2, 'Quality Control Specialist', 'Alectura lathami', 2, 2, 'archived', '2023-07-21');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (3, 'Pharmacist', 'Ammospermophilus nelsoni', 3, 3, 'published', '2022-10-10');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (4, 'Payment Adjustment Coordinator', 'Dolichitus patagonum', 4, 4, 'draft', '2023-04-25');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (5, 'Senior Developer', 'Eumetopias jubatus', 5, 5, 'archived', '2022-08-05');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (6, 'Nurse', 'Echimys chrysurus', 6, 6, 'published', '2023-02-01');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (7, 'Graphic Designer', 'Neophron percnopterus', 7, 7, 'archived', '2022-11-02');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (8, 'Software Test Engineer I', 'Calyptorhynchus magnificus', 8, 8, 'archived', '2023-06-29');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (9, 'Community Outreach Specialist', 'Vombatus ursinus', 9, 9, 'archived', '2023-11-21');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (10, 'Senior Developer', 'Mycteria leucocephala', 10, 10, 'published', '2022-12-08');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (11, 'Research Associate', 'Anthropoides paradisea', 11, 11, 'draft', '2023-05-17');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (12, 'Community Outreach Specialist', 'Bettongia penicillata', 12, 12, 'published', '2022-12-29');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (13, 'Automation Specialist III', 'Mazama gouazoubira', 13, 13, 'published', '2023-07-21');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (14, 'Programmer Analyst IV', 'Arctogalidia trivirgata', 14, 14, 'archived', '2023-02-28');
+insert into cms_posts (id, title, message, category_id, userid, status, created) values (15, 'Legal Assistant', 'Pseudocheirus peregrinus', 15, 15, 'draft', '2022-06-29');
 -- --------------------------------------------------------
 
 --
