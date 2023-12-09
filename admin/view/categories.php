@@ -1,11 +1,10 @@
 
 <?php
     include("../class/Database.php");
-    $sql = "SELECT * FROM cms_category ";
+    $sql = "SELECT * FROM cms_category";
     $data = $connect->query($sql);
-    $list_category = [];
     while ($row = $data->fetch_assoc()) {
-        $list_category[] = $row;
+      $list_category [] = $row;
     }
 ?>
 <!DOCTYPE html>
