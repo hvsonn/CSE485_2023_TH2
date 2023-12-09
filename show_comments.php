@@ -1,27 +1,18 @@
 <?php
-    include_once("db_connect.php");
-    $commentQuery = "SELECT id, parent_id, comment, sender, date FROM
-        comment WHERE parent_id = '0' ORDER BY id DESC";
-    $stmt = $conn->prepare($commentQuery);
-    $stmt->execute();
-    $arrRes = $stmt->fetchAll();
-    // $commentsResult = mysqli_query($conn, $commentQuery) or
-    //         die("database error:". mysqli_error($conn));
+    include_once("config/Database.php");
+    $db = new Database();
+    $conn = $db->getConnection();
+    $commentQuery = "SELECT id, parent_id, comment, sender, date FROM comment WHERE parent_id = '0' ORDER BY id DESC";
+    $commentsResult = mysqli_query($conn, $commentQuery) or die("database error:". mysqli_error($conn));
     $commentHTML = '';
-    foreach($arrRes as $row){
+    while($comment = mysqli_fetch_assoc($commentsResult)){
         $commentHTML .= '
             <div class="panel panel-primary">
-            <div class="panel-heading">By
-            <b>'.$row["sender"].'</b> on
-            <i>'.$row["date"].'</i></div>
-            <div class="panel-body">'.$row["comment"].'</div>
-            <div class="panel-footer" align="right"><button
-            type="button" class="btn btn-primary reply"
-            id="'.$row["id"].'">Reply</button></div>
+            <div class="panel-heading">By <b>'.$comment["sender"].'</b> on <i>'.$comment["date"].'</i></div>
+            <div class="panel-body">'.$comment["comment"].'</div>
+            <div class="panel-footer" align="right"><button type="button" class="btn btn-primary reply" id="'.$comment["id"].'">Reply</button></div>
             </div> ';
-        // $commentHTML .= getCommentReply($conn, $comment["id"]);
+        // $commentHTML .= $comment["id"];
     }
     echo $commentHTML;
-
-
 ?>
