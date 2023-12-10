@@ -12,7 +12,7 @@
     <ul class="mucluc">
       <li><a href="#">Dashboard</a></li>
       <li><a href="#">Categories</a></li>
-      <li><a href="view/posts.php">Posts</a></li>
+      <li><a href="posts.php">Posts</a></li>
       <li><a href="#">Users</a></li>
     </ul>
   </aside>

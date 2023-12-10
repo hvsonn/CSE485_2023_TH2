@@ -1,4 +1,11 @@
-<script src="jquery-3.7.1.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/Index.css">
+  <script src="jquery-3.7.1.min.js"></script>
+</head>
 
 <div class="container">		
 	<h2>Example: Comment System with Ajax, PHP & MySQL</h2>		
