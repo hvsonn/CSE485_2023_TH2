@@ -112,21 +112,21 @@ CREATE TABLE `cms_user` (
 --
 
 INSERT INTO `cms_user` (`id`, `first_name`, `last_name`, `email`, `password`, `type`, `deleted`) VALUES
-(1, 'Simona', 'Hornig', 'mjentin0@t.co', 'kH__c4m/72dG2', 1, 1),
-(2, 'Alfonse', 'Braikenridge', 'psellor1@edublogs.org', 'rDI/Ces{}%xK{', 0, 2),
-(3, 'Xavier', 'Lankester', 'jhillatt2@last.fm', 'sV#>6?Guy\"zhcoJ', 0, 3),
-(4, 'Farley', 'Bowland', 'lmccaughan3@narod.ru', 'bW~OpXnG', 0, 4),
-(5, 'Packston', 'Surtees', 'lcorryer4@mlb.com', 'wUSoQ!o8=QOmAL$', 0, 5),
-(6, 'Judd', 'Le febre', 'dpresnall5@flickr.com', 'zV\'?}ujfA<J', 0, 6),
-(7, 'Krystle', 'Perutto', 'mgibby6@princeton.edu', 'uVPY|@Qj0dP', 0, 7),
-(8, 'Janeva', 'Botly', 'ralderwick7@naver.com', 'nD>dCKQso}e4kB', 0, 8),
-(9, 'Dacie', 'Trighton', 'sgavozzi8@cisco.com', 'yD|1wiHI?Z', 0, 9),
-(10, 'Cordie', 'Reston', 'sreston9@gizmodo.com', 'dTr{m3~u,5<t', 0, 10),
-(11, 'Ashbey', 'Plaistowe', 'wwashingtona@tinypic.com', 'zP$YdSLtrc', 0, 11),
-(12, 'Tallulah', 'Allcroft', 'rgallonb@admin.ch', 'fXpc(A3iJa1w<&&V', 0, 12),
-(13, 'Wilfrid', 'McNae', 'tstrelitzerc@alexa.com', 'aA0`/dN/MG', 0, 13),
-(14, 'Marcia', 'Esseby', 'enorthleyd@over-blog.com', 'fRV=Mr++3', 0, 14),
-(15, 'Meghan', 'Spaunton', 'dslimingse@theatlantic.com', 'bV*sM*%ycE2sn6hb', 0, 15);
+(1, 'Simona', 'Hornig', 'mjentin0@t.co', 'kH__c4m/72dG2', 1, 0),
+(2, 'Alfonse', 'Braikenridge', 'psellor1@edublogs.org', 'rDI/Ces{}%xK{', 0, 0),
+(3, 'Xavier', 'Lankester', 'jhillatt2@last.fm', 'sV#>6?Guy\"zhcoJ', 0, 0),
+(4, 'Farley', 'Bowland', 'lmccaughan3@narod.ru', 'bW~OpXnG', 0, 0),
+(5, 'Packston', 'Surtees', 'lcorryer4@mlb.com', 'wUSoQ!o8=QOmAL$', 0, 0),
+(6, 'Judd', 'Le febre', 'dpresnall5@flickr.com', 'zV\'?}ujfA<J', 0, 0),
+(7, 'Krystle', 'Perutto', 'mgibby6@princeton.edu', 'uVPY|@Qj0dP', 0, 0),
+(8, 'Janeva', 'Botly', 'ralderwick7@naver.com', 'nD>dCKQso}e4kB', 0, 0),
+(9, 'Dacie', 'Trighton', 'sgavozzi8@cisco.com', 'yD|1wiHI?Z', 0, 0),
+(10, 'Cordie', 'Reston', 'sreston9@gizmodo.com', 'dTr{m3~u,5<t', 0, 0),
+(11, 'Ashbey', 'Plaistowe', 'wwashingtona@tinypic.com', 'zP$YdSLtrc', 0, 0),
+(12, 'Tallulah', 'Allcroft', 'rgallonb@admin.ch', 'fXpc(A3iJa1w<&&V', 0, 0),
+(13, 'Wilfrid', 'McNae', 'tstrelitzerc@alexa.com', 'aA0`/dN/MG', 0, 0),
+(14, 'Marcia', 'Esseby', 'enorthleyd@over-blog.com', 'fRV=Mr++3', 0, 0),
+(15, 'Meghan', 'Spaunton', 'dslimingse@theatlantic.com', 'bV*sM*%ycE2sn6hb', 0, 0);
 
 --
 -- Indexes for dumped tables
