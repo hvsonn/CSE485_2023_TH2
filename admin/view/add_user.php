@@ -7,44 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/Index.css">
-    <title>Posts</title>
+    <title>Users</title>
 </head>
 <body>
     <?php include_once("menu.php") ?>
     <main class="container mt-5 mb-5">
         <div class="row">
             <div class="col-sm">
-                <h3 class="text-center text-uppercase fw-bold">Thêm mới post</h3>
-                <form action="../posts.php?action=add" method="post">
+                <h3 class="text-center text-uppercase fw-bold">Thêm mới user</h3>
+                <form action="../users.php?action=add" method="post">
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">Title</span>
-                        <input type="text" class="form-control" name="title" required>
+                        <span class="input-group-text" id="lblCatName">ID</span>
+                        <input type="text" class="form-control" name="id" required>
                     </div>
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">Message</span>
-                        <input type="text" class="form-control" name="message" required>
+                        <span class="input-group-text" id="lblCatName">First Name</span>
+                        <input type="text" class="form-control" name="firstname" required>
                     </div>                    
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">Category Id</span>
-                        <input type="text" class="form-control" name="categoryid" required>
+                        <span class="input-group-text" id="lblCatName">Last Name</span>
+                        <input type="text" class="form-control" name="lastname" required>
                     </div>
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">User ID</span>
-                        <input type="text" class="form-control" name="userid" required>
+                        <span class="input-group-text" id="lblCatName">Email</span>
+                        <input type="text" class="form-control" name="email" required>
                     </div>
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">Status</span>
-                        <select class="form-select" name="status">
-                            <option value="">Option</option>
-                            <option value="published">Published</option>
-                            <option value="draft">Draft</option>
-                            <option value="archived">Archived</option>
-                            <!-- Thêm các option khác nếu cần -->
-                        </select>
+                        <span class="input-group-text" id="lblCatName">Password</span>
+                        <input type="text" class="form-control" name="password">
                     </div>
                     <div class="form-group  float-end ">
                         <input type="submit" value="Thêm" class="btn btn-success">
-                        <a href="posts.php" class="btn btn-warning ">Quay lại</a>
+                        <a href="users.php" class="btn btn-warning ">Quay lại</a>
                     </div>
 
                 </form>
