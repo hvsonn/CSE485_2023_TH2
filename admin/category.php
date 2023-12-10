@@ -4,25 +4,30 @@ if(isset($_GET["action"])){
 
     if($_GET["action"] == "add"){
         $tentheloai = (isset($_POST["tentheloai"])) ? $_POST["tentheloai"] : "";
-        $author = new Category("", $tentheloai);
-        $author->themtheloai();
+        $category = new Category("", $tentheloai);
+        $category->themtheloai();
         header("Location: ../admin/view/category.php");
         
     }
 
     if($_GET["action"] == "edit"){
-        $matheloai = (isset($_POST["matheloai"])) ? $_POST["matheloai"] : "";
-        $tentheloai = (isset($_POST["tentheloai"])) ? $_POST["tentheloai"] : "";
-        $author = new Category($matheloai, $tentheloai);
-        $author->suatheloai($matheloai);
-        header("Location: ../admin/view/category.php");
+        try{
+            $matheloai = (isset($_POST["matheloai"])) ? $_POST["matheloai"] : "";
+            $tentheloai = (isset($_POST["tentheloai"])) ? $_POST["tentheloai"] : "";
+            $category = new Category($matheloai, $tentheloai);
+            $category->suatheloai($matheloai);
+            header("Location: ../admin/view/categories.php");   
+        }
+        catch(Exception $e){
+             echo "". $e->getMessage() ."";
+        }
     }
 
     if($_GET["action"] == "delete"){
         $id = (isset($_GET["id"])) ? $_GET["id"] : "";
         try{
-            $author = new Category($id,"");
-            $author->xoatheloai($id);
+            $category = new Category($id,"");
+            $category->xoatheloai($id);
             header("Location: ../admin/view/category.php");
         }
         catch(Exception $e){
