@@ -57,15 +57,16 @@
   <aside>
     <h2>Menu</h2>
     <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">Posts</a></li>
+      <li><a href="../index.php">Dashboard</a></li>
+      <li><a href="categories.php">Categories</a></li>
+      <li><a href="posts.php">Posts</a></li>
       <li><a href="#">Users</a></li>
     </ul>
   </aside>
 
   <main>
     <h1>Thể Loại</h1>
+    <a href="add_category.php"><h4>Thêm mới thể loại</h4></a>
     <table>
       <thead>
         <tr>

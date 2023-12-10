@@ -18,12 +18,11 @@ class Category{
     }
 
     public function themtheloai(){
-        include("model/connect.php");
+        include("class/Database.php");
         $tentheloai = (isset($_POST["tentheloai"])) ? $_POST["tentheloai"] : "";
 
-        $sql = "INSERT INTO theloai (ten_tloai) VALUES ('" . $tentheloai ."')";
+        $sql = "INSERT INTO cms_category (name) VALUES ('" . $tentheloai ."')";
         $connect->query($sql);
-        header("Location: ../admin/view/category.php");
     }
 
     public function suatheloai($id){
@@ -38,11 +37,9 @@ class Category{
         }
     }
     public function xoatheloai($id){
-        include("model/connect.php");
-
-        $sql = "DELETE FROM theloai WHERE ma_tloai=" . $id;
+        include("class/Database.php");
+        $sql = "DELETE FROM cms_category WHERE id=" . $id;
         $connect->query($sql);
-        header("Location: ../admin/view/category.php");
     }
 }
 ?>

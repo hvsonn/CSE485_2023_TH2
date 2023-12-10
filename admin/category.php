@@ -6,7 +6,7 @@ if(isset($_GET["action"])){
         $tentheloai = (isset($_POST["tentheloai"])) ? $_POST["tentheloai"] : "";
         $category = new Category("", $tentheloai);
         $category->themtheloai();
-        header("Location: ../admin/view/category.php");
+        header("Location: ../admin/view/categories.php");   
         
     }
 
@@ -28,7 +28,7 @@ if(isset($_GET["action"])){
         try{
             $category = new Category($id,"");
             $category->xoatheloai($id);
-            header("Location: ../admin/view/category.php");
+            header("Location: ../admin/view/categories.php");   
         }
         catch(Exception $e){
              echo "". $e->getMessage() ."";

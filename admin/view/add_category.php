@@ -1,13 +1,3 @@
-
-<?php
-    include("../class/Database.php");
-    $id = isset($_GET["id"]) ?  $_GET["id"] :"";
-    $sql = "SELECT * FROM cms_category WHERE id=" .$id;
-    $data = $connect->query($sql);
-    while ($row = $data->fetch_assoc()) {
-      $list_category =$row;
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +25,9 @@
                         <a class="nav-link" href="categories.php">Trang ngoài</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="categories.php">Thể loại</a>
+                        <a class="nav-link active fw-bold" href="category.php">Thể loại</a>
                     </li>
+
                 </ul>
                 </div>
             </div>
@@ -47,20 +38,15 @@
         <!-- <h3 class="text-center text-uppercase mb-3 text-primary">CẢM NHẬN VỀ BÀI HÁT</h3> -->
         <div class="row">
             <div class="col-sm">
-                <h3 class="text-center text-uppercase fw-bold">Sửa thông tin thể loại</h3>
-                <form action="../category.php?action=edit" method="post">
-                    <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatId">Mã thể loại</span>
-                        <input type="text" class="form-control" name="matheloai" readonly value="<?= $list_category["id"] ?>">
-                    </div>
-
+                <h3 class="text-center text-uppercase fw-bold">Thêm mới thể loại</h3>
+                <form action="../category.php?action=add" method="post">
                     <div class="input-group mt-3 mb-3">
                         <span class="input-group-text" id="lblCatName">Tên thể loại</span>
-                        <input type="text" class="form-control" name="tentheloai" value = "<?= $list_category["name"] ?>">
+                        <input type="text" class="form-control" name="tentheloai" >
                     </div>
 
                     <div class="form-group  float-end ">
-                        <input type="submit" value="Lưu lại" class="btn btn-success">
+                        <input type="submit" value="Thêm" class="btn btn-success">
                         <a href="category.php" class="btn btn-warning ">Quay lại</a>
                     </div>
                 </form>
